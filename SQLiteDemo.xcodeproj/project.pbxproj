@@ -13,6 +13,7 @@
 		29A4ACE925D9457600AAA7BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A4ACE725D9457600AAA7BC /* Main.storyboard */; };
 		29A4ACEB25D9457700AAA7BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29A4ACEA25D9457700AAA7BC /* Assets.xcassets */; };
 		29A4ACEE25D9457700AAA7BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29A4ACEC25D9457700AAA7BC /* LaunchScreen.storyboard */; };
+		29A4ACF825D950DC00AAA7BC /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A4ACF725D950C600AAA7BC /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		29A4ACEA25D9457700AAA7BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29A4ACED25D9457700AAA7BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29A4ACEF25D9457700AAA7BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29A4ACF725D950C600AAA7BC /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		29A4ACFA25D9569400AAA7BC /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29A4ACF825D950DC00AAA7BC /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +44,10 @@
 		29A4ACD525D9457600AAA7BC = {
 			isa = PBXGroup;
 			children = (
+				29A4ACFA25D9569400AAA7BC /* BridgeHeader.h */,
 				29A4ACE025D9457600AAA7BC /* SQLiteDemo */,
 				29A4ACDF25D9457600AAA7BC /* Products */,
+				29A4ACF625D950C500AAA7BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +71,14 @@
 				29A4ACEF25D9457700AAA7BC /* Info.plist */,
 			);
 			path = SQLiteDemo;
+			sourceTree = "<group>";
+		};
+		29A4ACF625D950C500AAA7BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29A4ACF725D950C600AAA7BC /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +309,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.trista.SQLiteDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/trista/Desktop/Swift/SQLiteDemo/BridgeHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -314,6 +329,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.trista.SQLiteDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/trista/Desktop/Swift/SQLiteDemo/BridgeHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
